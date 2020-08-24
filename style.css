@@ -4,10 +4,11 @@
     background-color: rgba(255, 255, 255, 0.767);
 }
 
-#logo {
+/*#logo {
 	padding: 2px;
-	margin-right:  5px; 
-}
+    margin-right:  5px; 
+
+}*/
 .display  {
 	background-image: url("images/bg.jpg");
 	background-position: center;
