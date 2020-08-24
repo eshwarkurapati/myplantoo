@@ -2,9 +2,9 @@
 <html>
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!--Required meta tags-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -13,14 +13,14 @@
     crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="style.css">
 
-  <title>my plantoo</title>
+  <title>My Plantoo</title>
 </head>
 
 <body>
 
   <!-- nav bar -->
   <nav class="navbar navbar-expand-lg fixed-top">
-    <img id="logo" src="images/tree.png" width="30px">
+    <img id="logo" src="images/tree.png" width="2.5%">
     <a class="navbar-brand" href="index.html">My Plantoo</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,90 +44,74 @@
         <a class="btn" type="button" data-toggle="dropdown" href="#"> <span class="fa fa-user-circle fa-lg"></span>
         </a>
         <ul class="dropdown-menu">
-          <li class="dropdown-item">Profile</li>
-          <li class="dropdown-item">Settings</li>
-          <li class="dropdown-item">Wishlist</li>
-          <li class="dropdown-item">Orders</li>
-          <li class="dropdown-item">Cart</li>
+          <li class="dropdown-item"><a href="#">Profile</a></li>
+          <li class="dropdown-item"><a href="#">Settings</a></li>
+          <li class="dropdown-item"><a href="#">Wishlist</a></li>
+          <li class="dropdown-item"><a href="#">Orders</a></li>
+          <li class="dropdown-item"><a href="#">Cart</a></li>
         </ul>
       </div>
 
       <form class="form-inline">
         <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
+        <button class="btn btn-success" type="submit">Search</button>
       </form>
     </div>
   </nav>
 
   <!--pictures display-->
   <div class="container-fluid display">
-    <div class="row row1 mt-3">
-      <div class="col-1"></div>
-
-      <div class="col-2">
+    <div class="row row1">
+      <div class="col-5 col-md-2 offset-1 mt-3">
         <div class="card card1">
-          <img src="images/med.jpg" class="card-img-top" alt="...">
+          <img src="images/med.jpg" class="card-img-top">
           <div class="card-body">
-            <div class="row">
               <a href="#" class="card-text">Medicinal Plants</a>
-            </div>
           </div>
         </div>
       </div>
 
-      <div class="col-2">
+      <div class="col-5 col-md-2 offset-1 offset-md-0 mt-3">
         <div class="card card2">
-          <img src="images/indoor2.jpg" class="card-img-top" alt="...">
+          <img src="images/indoor2.jpg" class="card-img-top">
           <div class="card-body">
-            <div class="row">
               <a href="#" class="card-text">Indoor Plants</a>
-            </div>
           </div>
         </div>
       </div>
 
-      <div class="col-2">
+      <div class="col-5 col-md-2 offset-1 offset-md-0 mt-3">
         <div class="card card3">
-          <img src="images/indoor1.jpg" class="card-img-top" alt="...">
+          <img src="images/indoor1.jpg" class="card-img-top">
           <div class="card-body">
-            <div class="row">
               <a href="#" class="card-text">Flower Plants</a>
-            </div>
           </div>
         </div>
       </div>
 
-      <div class="col-2">
+      <div class="col-5 col-md-2 offset-1 offset-md-0 mt-3">
         <div class="card card4">
-          <img src="images/bb.jpg" class="card-img-top" alt="...">
+          <img src="images/bb.jpg" class="card-img-top">
           <div class="card-body">
-            <div class="row">
               <a href="#" class="card-text">Fruit Plants</a>
-            </div>
-
           </div>
         </div>
       </div>
 
-      <div class="col-2">
+      <div class="col-5 col-md-2 offset-4 offset-md-0 mt-3">
         <div class="card card5">
-          <img src="images/pot.jpg" class="card-img-top" alt="...">
+          <img src="images/pot.jpg" class="card-img-top">
           <div class="card-body">
-            <div class="row">
               <a href="#" class="card-text">Pots & Planters</a>
-            </div>
           </div>
         </div>
       </div>
 
-      <div class="col-1"></div>
     </div>
     <br>
 
     <div class="row row2 mt-3">
-      <div class="col-1"></div>
-
-      <div class="col-6 disp-carousel">
+      <div class="col-10 col-md-6 offset-1" id="offers">
         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -160,27 +144,22 @@
         </div>
       </div>
 
-      <div class="col-4 text-align-center disp-card">
-        <div class="card">
-          <img src="images/freeshipping.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <center>
-              <p>on orders above <br>
-              <h4>500/-</h4>
-              </p>
-            </center>
-          </div>
+      <div class="col-10 col-md-4 offset-1 offset-md-0 mt-3 mt-md-0" id="free-shipping">
+            <div class="card">
+              <div class="card-header">
+                <img src="images/freeshipping.png" width="50%">
+              </div>
+              <div class="card-body">
+                <h3>on orders above 500/-</h3>
+              </div>
+            </div>
         </div>
       </div>
-
     </div>
-
-    <div class="row mt-4"></div>
   </div>
 
 
-  <!--about & footer-->
-
+  <!--about, policy, contact-->
   <div class="container-fluid display2">
     <div class="row about ">
       <div class="col-6 offset-1 mt-3">
@@ -189,7 +168,7 @@
           benefits attached to each of them.</p>
       </div>
     </div>
-
+    <br>
     <div class="row policy">
       <div class="offset-1 col-6 mt-3">
         <h1>Policy Info</h1>
@@ -200,8 +179,7 @@
 
       </div>
     </div>
-
-
+    <br>
     <div class="row contact">
       <div class="col-6 offset-1 mt-3">
         <h1>Need Help?</h1>
@@ -209,26 +187,25 @@
           <li>Contact us: +91 9999999999</li>
           <li>Email: executive@myplantoo.com</li>
         </ul>
-
       </div>
     </div>
   </div>
 
+
   <!-- Footer -->
-  <footer class="page-footer" >
+  <section class="footer">
+    <footer class="page-footer" >
 
-    <!-- Copyright -->
-    <div class="footer">
-       <div class="footer text-center py-3">
-      <h5>My_Plantoo.com</h5>
-    </div>
-    </div>
-    <!-- Copyright -->
-
-  </footer>
-  <!-- Footer -->
-
-
+      <!-- Copyright -->
+      <div class="footer">
+         <div class="footer text-center py-3">
+        <h5>My_Plantoo.com</h5>
+      </div>
+      </div>
+      <!-- Copyright -->
+  
+    </footer>
+  </section>
 
 
   <!-- Optional JavaScript -->
